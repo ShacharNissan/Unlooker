@@ -2,6 +2,11 @@
     <string name="app_name">UNLOOKER</string>
     <string name="get_started">Get Started</string>
     <string name="user_unlocked">You unlocked your phone</string>
-    <string name="user_times"> Times in a total of</string>
-    <string name="user_days"> days!</string>
+    <string name="user_times">Times in a total of</string>
+    <string name="user_days">days!</string>
+    <string name="button_watchtable">Summary</string>
+    <string name="app_logo">app logo</string>
+    <string name="unlock_logo">unlock logo</string>
+    <string name="backgroup_color">backgroup color</string>
+    <string name="zero">0</string>
 </resources>

@@ -8,29 +8,102 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/splash_LBL_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="87dp"
+        android:alpha="0.56"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/backgroup_color"
+        android:alpha="0.7"
+        android:src="@drawable/back_gradient" />
+
+    <ImageView
+        android:id="@+id/splash_IMG_logo2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/splash_LBL_name2"
+        android:layout_alignStart="@+id/splash_LBL_name2"
+        android:layout_alignEnd="@+id/splash_LBL_name2"
+        android:layout_marginStart="53dp"
+        android:contentDescription="@string/app_logo"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="67dp"
+        android:src="@drawable/guycartoon" />
+
+    <TextView
         android:id="@+id/main_LBL_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/main_button"
+        android:layout_below="@+id/splash_LBL_name2"
         android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
         android:layout_marginStart="46dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="579dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="47dp"
         android:text="@string/user_unlocked"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/main_LBL_info2"
+        android:id="@+id/main_LBL_unlock_sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/main_button"
+        android:layout_below="@+id/main_LBL_info"
         android:layout_alignStart="@+id/main_LBL_info"
         android:layout_alignEnd="@+id/main_LBL_info"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="526dp"
-        android:text="0"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="153dp"
+        android:text="@string/zero"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/main_LBL_info2"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_LBL_unlock_sum"
+        android:layout_alignStart="@+id/main_LBL_info"
+        android:layout_alignEnd="@+id/main_LBL_info"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/user_times"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/main_LBL_day_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_LBL_info2"
+        android:layout_alignStart="@+id/main_LBL_info"
+        android:layout_alignEnd="@+id/main_LBL_info"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/zero"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
@@ -38,52 +111,34 @@
         android:id="@+id/main_LBL_info3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/main_button"
+        android:layout_below="@+id/main_LBL_day_sum"
         android:layout_alignStart="@+id/main_LBL_info"
         android:layout_alignEnd="@+id/main_LBL_info"
-        android:layout_marginStart="51dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="471dp"
-        android:text="@string/user_times"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/main_LBL_info4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/main_button"
-        android:layout_alignStart="@+id/main_LBL_info"
-        android:layout_alignEnd="@+id/main_LBL_info"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="406dp"
-        android:text="0"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/main_LBL_info5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/main_button"
-        android:layout_alignStart="@+id/main_LBL_info"
-        android:layout_alignEnd="@+id/main_LBL_info"
-        android:layout_marginStart="129dp"
-        android:layout_marginEnd="122dp"
-        android:layout_marginBottom="349dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="127dp"
         android:text="@string/user_days"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/main_button"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_watchtable"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="45dp"
-        android:text="Button" />
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/button_watchtable"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/ic_start"
+        app:iconGravity="end"
+        app:iconTint="@color/black"
+        app:strokeColor="@color/black" />
 
 </RelativeLayout>
