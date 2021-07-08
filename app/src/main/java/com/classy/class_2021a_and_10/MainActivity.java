@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static Context context;
 
+    private TextView text_title;
     private TextView main_LBL_info;
     private Button main_button;
 
@@ -24,14 +25,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         context = getApplicationContext();
-        main_LBL_info = findViewById(R.id.main_LBL_info);
-        main_button = findViewById(R.id.main_button);
+        text_title = findViewById(R.id.text_mainTitle);
+        main_LBL_info = findViewById(R.id.text_main_info);
+        main_button = findViewById(R.id.button_main_table);
+
+        text_title.bringToFront();
 
         Intent intent = new Intent(this, MyService.class);
         startService(intent);
 
         main_button.setOnClickListener(v -> {
-            main_LBL_info.setText(MyService.read_from_storage(context));
+            Intent myIntent = new Intent(MainActivity.this, Activity_UnlockTable.class);
+            startActivity(myIntent);
         });
     }
 

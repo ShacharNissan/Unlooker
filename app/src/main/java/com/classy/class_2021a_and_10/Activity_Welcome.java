@@ -15,8 +15,8 @@ import com.google.android.material.button.MaterialButton;
 public class Activity_Welcome extends AppCompatActivity {
 
     private final int ANIMATION_DURATION = 2000;
-    private ImageView splash_IMG_logo;
-    private MaterialButton splash_BTN_start;
+    private ImageView image_welcome_logo;
+    private MaterialButton button_welcome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class Activity_Welcome extends AppCompatActivity {
 
         findViews();
         initViews();
-        startAnimation(splash_IMG_logo);
+        startAnimation(image_welcome_logo);
     }
 
     private void startAnimation(View view) {
@@ -54,7 +54,7 @@ public class Activity_Welcome extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animator animator) {
-                        splash_BTN_start.setVisibility(View.VISIBLE);
+                        button_welcome.setVisibility(View.VISIBLE);
                     }
 
                     @Override
@@ -66,9 +66,9 @@ public class Activity_Welcome extends AppCompatActivity {
     }
 
     private void initViews() {
-        splash_BTN_start.setVisibility(View.INVISIBLE);
+        button_welcome.setVisibility(View.INVISIBLE);
 
-        splash_BTN_start.setOnClickListener(new View.OnClickListener() {
+        button_welcome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(Activity_Welcome.this, MainActivity.class);
@@ -78,7 +78,7 @@ public class Activity_Welcome extends AppCompatActivity {
     }
 
     private void findViews() {
-        splash_IMG_logo = findViewById(R.id.splash_IMG_logo);
-        splash_BTN_start = findViewById(R.id.splash_BTN_start);
+        image_welcome_logo = findViewById(R.id.image_welcome_logo);
+        button_welcome = findViewById(R.id.button_welcome);
     }
 }

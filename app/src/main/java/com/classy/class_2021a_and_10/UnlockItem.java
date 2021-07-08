@@ -9,6 +9,10 @@ public class UnlockItem {
         this.date = date;
     }
 
+    public UnlockItem(String date){
+        this.date = date;
+    }
+
     public int getImage() {
         return image;
     }

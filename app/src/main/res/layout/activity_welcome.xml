@@ -36,7 +36,7 @@
         android:src="@drawable/back_gradient" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/splash_BTN_start"
+        android:id="@+id/button_welcome"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         app:strokeColor="@color/black" />
 
     <TextView
-        android:id="@+id/splash_LBL_name"
+        android:id="@+id/text_welcomeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -64,12 +64,12 @@
         android:textSize="40sp" />
 
     <ImageView
-        android:id="@+id/splash_IMG_logo"
+        android:id="@+id/image_welcome_logo"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:alpha="0.7"
         android:contentDescription="@string/app_logo"
-        android:layout_above="@id/splash_LBL_name"
+        android:layout_above="@id/text_welcomeTitle"
         android:layout_centerHorizontal="true"
         android:src="@drawable/guycartoon" />
 
