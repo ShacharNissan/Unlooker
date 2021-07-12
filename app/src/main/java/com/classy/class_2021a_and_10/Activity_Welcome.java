@@ -34,23 +34,13 @@ public class Activity_Welcome extends AppCompatActivity {
         int height = displayMetrics.heightPixels;
         view.setY(-height / 2);
 
-
-//        view.setScaleX(0.0f);
-//        view.setScaleY(0.0f);
-//        view.setAlpha(0.0f);
         view.animate()
-//                .alpha(1.0f)
-//                .scaleY(1.0f)
-//                .scaleX(1.0f)
-//                .rotation(360)
                 .translationY(0)
                 .setDuration(ANIMATION_DURATION)
                 .setInterpolator(new AccelerateInterpolator())
                 .setListener(new Animator.AnimatorListener() {
                     @Override
-                    public void onAnimationStart(Animator animator) {
-
-                    }
+                    public void onAnimationStart(Animator animator) { }
 
                     @Override
                     public void onAnimationEnd(Animator animator) {
